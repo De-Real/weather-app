@@ -91,7 +91,7 @@ const UserLocation = () => {
 		}
 
 		getPosition();
-	}, [])
+	}, [position])
 
 	if (error) {
 		console.error(error);
