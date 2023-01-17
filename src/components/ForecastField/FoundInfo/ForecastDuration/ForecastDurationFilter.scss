@@ -1,0 +1,19 @@
+.forecast-duration{
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+
+
+	& h2{
+		color: white;
+		padding: 0 10px;
+	}
+	&__selection{
+		background-color: rgba(255, 255, 255, 0.15);
+		color: rgb(46, 40, 40);
+		border: 1px solid white;
+		padding: 5px 10px;
+
+		border-radius: 3px;
+	}
+}

@@ -1,0 +1,9 @@
+.forecast-duration__items{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 0 0 250px;
+	max-height: 500px;
+	overflow: auto;
+	padding-right: 10px;
+}

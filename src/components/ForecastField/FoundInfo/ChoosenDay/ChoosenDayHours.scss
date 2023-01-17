@@ -1,0 +1,25 @@
+.choosen-day-hours{
+	padding: 20px;
+	&__title{
+		font-size: 20px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	&__items{
+		display: flex;
+		gap: 5px;
+	}
+
+	&__forecast{
+		display: flex;
+		
+	}
+
+	&__detailed{
+		padding-top: 86px;
+		& p{
+			padding-bottom: 11px;
+		}
+	}
+}
+

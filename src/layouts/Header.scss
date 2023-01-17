@@ -1,0 +1,30 @@
+.header{
+	display: flex;
+	align-items: center;
+	height: 70px;
+	border-bottom: 1px solid grey;
+	font-size: 24px;
+	margin-bottom: 16px;
+	color: black;
+
+	&__logo{
+		flex: 1 1 40%;
+		font-size: 48px;
+		line-height: 64px;
+	}
+	&__nav{
+		flex: 1 1 60%;
+	}
+	&__links{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		& a{
+			color: black;
+			&.active{
+				color: greenyellow;
+				text-decoration: underline;
+			}
+		}
+	}
+}

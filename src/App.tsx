@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import RoutesNavigation from './RoutesNavigation';
+const App: React.FC = () => {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// useEffect(() => {
+	// 	const fetchData = async () => {
+
+	// 		const response = await fetch('http://api.weatherapi.com/v1/forecast.json?key=2fd38a87e8c84cf493c171558230501&q=Bila Tserkva&days=14');
+	// 		if (!response.ok) {
+	// 			console.log(response.statusText);
+	// 		}
+
+	// 		interface FOEf { results: { current: {}, forecast: { forecastday: [] } } }
+
+	// 		const results = await response.json();
+
+	// 		console.log(results.forecast.forecastday[0].hour[0]);
+
+	// 	}
+	// 	fetchData();
+	// }, [])
+
+	
+	return (
+		<main>
+			<RoutesNavigation />
+		</main>
+	);
 }
 
 export default App;
